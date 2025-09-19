@@ -5,21 +5,21 @@
 class WeatherCli < Formula
   desc "A simple CLI application that prints hello world"
   homepage "https://github.com/cybo42/weather-cli"
-  version "1.1.1"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/cybo42/weather-cli2/releases/download/v1.1.1/weather-cli2_Darwin_x86_64.tar.gz"
-      sha256 "e30828177cd6391fd25dd856115c436ea277c5055a792eff239acc86c9cb51d5"
+      url "https://github.com/cybo42/weather-cli2/releases/download/v1.2.0/weather-cli2_Darwin_x86_64.tar.gz"
+      sha256 "41a1c72f400ea410a8db7354745bece34d18ac7ced14ffa85cf3ffbfe0474a9a"
 
       def install
         bin.install "weather-cli"
       end
     end
     on_arm do
-      url "https://github.com/cybo42/weather-cli2/releases/download/v1.1.1/weather-cli2_Darwin_arm64.tar.gz"
-      sha256 "d08aab810a3408a8db7316ca39beac7c2c0abfb7e3c40ee393935430d0e1f024"
+      url "https://github.com/cybo42/weather-cli2/releases/download/v1.2.0/weather-cli2_Darwin_arm64.tar.gz"
+      sha256 "d639a9670fa9c659199af9196eb505fb528c32a42a01a85d4724627ed3505831"
 
       def install
         bin.install "weather-cli"
@@ -30,8 +30,8 @@ class WeatherCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cybo42/weather-cli2/releases/download/v1.1.1/weather-cli2_Linux_x86_64.tar.gz"
-        sha256 "64eb26beb67445961a78dfd380f521f9953394736d75e0f2af8fd345aece7534"
+        url "https://github.com/cybo42/weather-cli2/releases/download/v1.2.0/weather-cli2_Linux_x86_64.tar.gz"
+        sha256 "14a2cf4910cef01e7f0dc13e3193978b094ae1431b4284e55895be28eb47205e"
 
         def install
           bin.install "weather-cli"
@@ -40,8 +40,8 @@ class WeatherCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cybo42/weather-cli2/releases/download/v1.1.1/weather-cli2_Linux_arm64.tar.gz"
-        sha256 "e1330850cec0b359064461ef89b0484f68a89151c62d818f8fdfcf167b08a833"
+        url "https://github.com/cybo42/weather-cli2/releases/download/v1.2.0/weather-cli2_Linux_arm64.tar.gz"
+        sha256 "39ec3be157893743d132e6aa36db03eca2d33ba4a7b2dbf002d62daa94efd2fc"
 
         def install
           bin.install "weather-cli"
